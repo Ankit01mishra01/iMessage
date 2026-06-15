@@ -42,9 +42,6 @@ services:
         condition: service_healthy
       redis:
         condition: service_healthy
-    volumes:
-      - ./backend:/app
-      - /app/node_modules
 
   frontend:
     build:
@@ -55,9 +52,6 @@ services:
       VITE_API_URL: http://localhost:3000
     depends_on:
       - backend
-    volumes:
-      - ./frontend:/app
-      - /app/node_modules
 
 volumes:
   mongo_data:
