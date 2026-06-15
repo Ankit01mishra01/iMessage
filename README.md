@@ -1,4 +1,4 @@
-# SOEN
+# iMessage
 
 Collaborative AI coding workspace with realtime project chat, Gemini-powered code generation, and in-browser execution via WebContainer.
 
